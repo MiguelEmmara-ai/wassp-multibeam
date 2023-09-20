@@ -1,13 +1,11 @@
-import React from 'react';
-import { render } from '@testing-library/react';
-import Home from '../pages/index';
+import React from 'react'
+import { render } from '@testing-library/react'
+import ButtonUsage from '@/components/Button'
 
-describe('Home', () => {
-  it('should render the MUI button', () => {
-    const { getByRole } = render(<Home />);
+describe('ButtonUsage Component', () => {
+  it('renders without errors', () => {
+    const { getByText } = render(<ButtonUsage />)
 
-    const button = getByRole('button');
-
-    expect(button).toBeInTheDocument();
-  });
-});
+    expect(getByText('Click me!')).toBeInTheDocument()
+  })
+})
