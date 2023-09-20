@@ -1,19 +1,12 @@
-import ButtonUsage from '@/components/Button'
+import { Nav } from "@/components"
 
 const Home = () => {
   return (
-    <section className="flex">
-      <div className="container">
-        <h1>Test Normal Button</h1>
-        <button
-        className='bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 border border-blue-700 rounded'
-        >CLICK ME!</button>
+    <section className="container">
+      <div className='mt-5 bg-black'>
+        <Nav />
       </div>
 
-      <div className="container">
-        <h1>Test MUI Button</h1>
-        <ButtonUsage />
-      </div>
     </section>
   )
 }
