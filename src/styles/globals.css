@@ -1,3 +1,16 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+@font-face {
+  font-family: 'Norwester';
+  src: url('/fonts/norwester.otf') format('opentype');
+}
+
+.norwester-font {
+  font-family: 'Norwester', sans-serif;
+}
+
+body {
+  font-family: 'Norwester', sans-serif;
+}

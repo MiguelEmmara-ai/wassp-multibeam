@@ -16,6 +16,8 @@ const config: Config = {
     },
     extend: {
       backgroundImage: {
+        'hero-bg': "url('/assets/images/01.jpg')",
+        'hero-overlay': 'linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("/assets/images/01.jpg")',
         'gradient-radial': 'radial-gradient(var(--tw-gradient-stops))',
         'gradient-conic':
           'conic-gradient(from 180deg at 50% 50%, var(--tw-gradient-stops))',
