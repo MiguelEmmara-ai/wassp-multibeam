@@ -1,6 +1,6 @@
 import React from 'react'
 import { render } from '@testing-library/react'
-import ButtonUsage from '@/components/Button'
+import ButtonUsage from '@/components/CustomButton'
 
 describe('ButtonUsage Component', () => {
   it('renders without errors', () => {
