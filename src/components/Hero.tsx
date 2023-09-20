@@ -1,6 +1,32 @@
 import { Box, Typography, Button } from '@mui/material'
 import { Nav } from '.'
 
+const buttonStyles = {
+  backgroundColor: 'transparent',
+  fontWeight: '600',
+  color: 'white',
+  py: '2',
+  px: '4',
+  '&:hover': {
+    backgroundColor: '#1E40AF',
+    border: 'none',
+  },
+  borderRadius: '9999px',
+  border: '1px solid #718096',
+}
+
+const ContactButton = (
+  <Button
+    variant="contained"
+    color="primary"
+    sx={buttonStyles}
+    endIcon={<img src="/svg/ArrowRight.svg" alt="Arrow Right" />}
+    onClick={() => {}}
+  >
+    Contact Us
+  </Button>
+)
+
 const Hero = () => {
   return (
     <section>
@@ -27,7 +53,7 @@ const Hero = () => {
           </div>
         </div>
 
-        <div className="flex items-center justify-center mr-[250px] mt-[300px]">
+        <div className="flex items-center justify-center mr-[250px] lg:mt-[300px] mt-[250px]">
           <div className="text-white max-w-sm rounded-lg shadow-lg">
             <p className="norwester-font font-thin">
               WASSP multi-beam enables
@@ -38,32 +64,13 @@ const Hero = () => {
               <br />
               versatility and detail.
             </p>
+            <div className="lg:hidden md:block mb-3">{ContactButton}</div>
           </div>
         </div>
 
         {/* Contact Us Button */}
-        <div className="absolute bottom-0 right-0 mr-[20px] mb-[20px]">
-          <Button
-            variant="contained"
-            color="primary"
-            sx={{
-              backgroundColor: 'transparent',
-              fontWeight: '600',
-              color: 'white',
-              py: '2',
-              px: '4',
-              '&:hover': {
-                backgroundColor: '#1E40AF',
-                border: 'none',
-              },
-              borderRadius: '9999px',
-              border: '1px solid #718096',
-            }}
-            endIcon={<img src="/svg/ArrowRight.svg" alt="Arrow Right" />}
-            onClick={() => {}}
-          >
-            Contact Us
-          </Button>
+        <div className="hidden sm:hidden lg:block absolute bottom-0 right-0 mr-[20px] mb-[20px]">
+          {ContactButton}
         </div>
       </Box>
     </section>
