@@ -1,154 +1,50 @@
-import { Typography, Button } from '@mui/material'
 import Image from 'next/image'
+import { CustomButton } from '.'
 
 const Footer = () => {
   return (
-    <footer className="text-white py-12">
-      <div className="container mx-auto grid grid-cols-12 gap-4">
-        <div className="col-span-3 flex flex-col justify-between">
-          <div className="mb-4">
-            <Typography variant="body1" className="font-semibold">
-              Dui duis facilisis id et ullamcorper diam est. Vulputate ac magna in id.
-            </Typography>
+    <div className="relative w-full overflow-hidden flex flex-col items-center justify-start">
+      <section className="self-stretch relative h-[698px] text-left text-base text-white font-desktop-paragraph">
+        <div className="absolute h-full w-full top-[0%] right-[0%] bottom-[0%] left-[0%]" />
+        <div className="absolute h-[6.92%] w-[8.99%] top-[32.95%] right-[85.76%] bottom-[60.13%] left-[5.25%] rounded-81xl box-border overflow-hidden flex flex-row py-2.5 px-[30px] items-center justify-center gap-[10px] text-sm border-[0.5px] border-solid border-white">
+          <div className="relative">
+            <CustomButton title="Our Story" />
           </div>
-          <Button
-            variant="contained"
-            color="primary"
-            sx={{
-              backgroundColor: 'transparent',
-              fontWeight: '600',
-              color: 'white',
-              py: '2',
-              px: '4',
-              '&:hover': {
-                backgroundColor: '#1E40AF',
-                border: 'none',
-              },
-              borderRadius: '9999px',
-              border: '1px solid #718096',
-            }}
-            endIcon={<Image src="/svg/ArrowRight.svg" width={29} height={29} alt="Arrow Down" />}
-          >
-            Contact
-          </Button>
-          <div className="mt-2">
-            <Typography variant="body1">
-              <a href="#" className="text-white">
-                Subscribe to our newsletter
-              </a>
-            </Typography>
-          </div>
+          <img
+            className="relative w-[28.28px] h-[28.28px] overflow-hidden shrink-0"
+            alt=""
+            src="/pharrowrightthin1.svg"
+          />
         </div>
-
-        <div className="col-span-2">
-          <div className="mb-4">
-            <Typography variant="body1" className="font-semibold">
-              Navigation
-            </Typography>
-          </div>
-          <div className="flex flex-col gap-2">
-            <Typography variant="body1">
-              <a href="#" className="text-white hover:underline">
-                Home
-              </a>
-            </Typography>
-            <Typography variant="body1">
-              <a href="#" className="text-white hover:underline">
-                Products
-              </a>
-            </Typography>
-            <Typography variant="body1">
-              <a href="#" className="text-white hover:underline">
-                About ENL
-              </a>
-            </Typography>
-            <Typography variant="body1">
-              <a href="#" className="text-white hover:underline">
-                Multibeam Technology
-              </a>
-            </Typography>
-            <Typography variant="body1">
-              <a href="#" className="text-white hover:underline">
-                News
-              </a>
-            </Typography>
-            <Typography variant="body1">
-              <a href="#" className="text-white hover:underline">
-                Resources
-              </a>
-            </Typography>
-            <Typography variant="body1">
-              <a href="#" className="text-white hover:underline">
-                Contact
-              </a>
-            </Typography>
-          </div>
+        <h3 className="m-0 absolute w-[27.01%] top-[17.19%] left-[4.39%] text-5xl font-normal font-inherit inline-block">
+          Dui duis facilisis id et ullamcorper diam est. Vulputate ac magna in id.
+        </h3>
+        <div className="absolute top-[52.15%] left-[4.39%] [text-decoration:underline]">
+          Subscribe to our newsletter
         </div>
-
-        <div className="col-span-2">
-          <div className="mb-4">
-            <Typography variant="body1" className="font-semibold">
-              Social Media
-            </Typography>
-          </div>
-          <div className="flex flex-col gap-2">
-            <Typography variant="body1">
-              <a href="#" className="text-white hover:underline">
-                Facebook
-              </a>
-            </Typography>
-            <Typography variant="body1">
-              <a href="#" className="text-white hover:underline">
-                Instagram
-              </a>
-            </Typography>
-            <Typography variant="body1">
-              <a href="#" className="text-white hover:underline">
-                Youtube
-              </a>
-            </Typography>
-          </div>
-        </div>
-
-        <div className="col-span-2">
-          <div className="mb-4">
-            <Typography variant="body1" className="font-semibold">
-              Locations
-            </Typography>
-          </div>
-
-          <div className="flex flex-col gap-2">
-            <Typography variant="body1">
-              <a href="#" className="text-white hover:underline">
-                Facebook
-              </a>
-            </Typography>
-            <Typography variant="body1">
-              <a href="#" className="text-white hover:underline">
-                Instagram
-              </a>
-            </Typography>
-            <Typography variant="body1">
-              <a href="#" className="text-white hover:underline">
-                Youtube
-              </a>
-            </Typography>
-          </div>
-        </div>
-
-        <div className="col-span-3">
-          <div className="flex items-center gap-4">
-            <Image
-              src="/svg/WasspMultibeam.svg"
-              width={1245}
-              height={132}
-              alt="Wassap Multibeam"
-              style={{ opacity: '0.5',  fill: '#02143A' }}
-            />
-          </div>
-        </div>
-      </div>
-    </footer>
+        <div className="absolute top-[56.16%] left-[66.91%]">Youtube</div>
+        <div className="absolute top-[52.15%] left-[66.91%]">Instagram</div>
+        <div className="absolute top-[48.14%] left-[66.91%]">Facebook</div>
+        <div className="absolute top-[41.26%] left-[66.91%]">Contact</div>
+        <div className="absolute top-[37.25%] left-[66.91%]">Resources</div>
+        <div className="absolute top-[33.24%] left-[66.91%]">News</div>
+        <div className="absolute top-[25.21%] left-[66.91%]">About ENL</div>
+        <div className="absolute top-[29.23%] left-[66.91%]">Multibeam Technology</div>
+        <div className="absolute top-[21.2%] left-[66.91%]">Products</div>
+        <div className="absolute top-[17.19%] left-[66.91%] [text-decoration:underline]">Home</div>
+        <div className="absolute top-[17.19%] left-[87.85%]">Offices</div>
+        <div className="absolute top-[21.2%] left-[87.85%]">Auckland - NZ</div>
+        <div className="absolute top-[25.21%] left-[87.85%]">Essex - UK</div>
+        <div className="absolute top-[56.16%] left-[87.85%]">©2023 WASSP</div>
+        <Image
+          className="absolute h-[18.91%] w-[91.22%] top-[72.49%] right-[4.39%] bottom-[8.6%] left-[4.39%] max-w-full overflow-hidden max-h-full mix-blend-overlay"
+          alt="WasspMultibeam"
+          src="/svg/WasspMultibeam.svg"
+          width={500}
+          height={500}
+        />
+      </section>
+    </div>
   )
 }
 
