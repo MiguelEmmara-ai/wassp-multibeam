@@ -1,7 +1,8 @@
+import { SmoothScrollProps } from '@/types'
 import { useSpring, animated } from '@react-spring/web'
 import { useEffect } from 'react'
 
-const SmoothScroll: React.FC = ({ children }) => {
+const SmoothScroll: React.FC<SmoothScrollProps> = ({ children }) => {
   const [{ y }, set] = useSpring(() => ({ y: 0 }))
 
   const handleScroll = () => {
