@@ -3,7 +3,7 @@ import { CustomButton } from '.'
 
 const About = () => {
   return (
-    <section className="text-white relative mt-[-200px]">
+    <section className="text-white relative lg:mt-[-200px] md:mt-0 mt-[-170px]">
       <div className="flex items-center">
         <div className="flex-shrink-0 w-full md:w-1/2">
           <Image src="/svg/Layers.svg" alt="Layers" layout="responsive" width={500} height={500} />

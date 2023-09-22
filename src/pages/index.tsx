@@ -22,7 +22,6 @@ const Home = () => {
       <Content number="04" title="TESTIMONIAL" contentComponent={<Testimonial />} />
       <Content number="05" title="NEWS" contentComponent={<News />} />
       <ImageSroll />
-
       <Footer />
     </div>
   )

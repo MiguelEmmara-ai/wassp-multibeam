@@ -38,5 +38,5 @@
 
 body {
   font-family: 'neue-haas-grotesk-display', sans-serif;
-  background-color: #042033;
+  background-color: #042033 !important;
 }
