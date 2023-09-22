@@ -8,11 +8,13 @@ import {
   News,
   ImageSroll,
   Footer,
+  SmoothScroll,
 } from '@/components'
 
 const Home = () => {
   return (
     <div className="relative">
+      {/* <SmoothScroll></SmoothScroll> */}
       <Hero />
       <About />
       <Fseries />
@@ -20,6 +22,7 @@ const Home = () => {
       <Content number="04" title="TESTIMONIAL" contentComponent={<Testimonial />} />
       <Content number="05" title="NEWS" contentComponent={<News />} />
       <ImageSroll />
+
       <Footer />
     </div>
   )

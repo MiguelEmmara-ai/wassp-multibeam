@@ -9,8 +9,10 @@ import Content from "./Content";
 import Testimonial from "./Testimonial";
 import News from "./News";
 import Footer from "./Footer";
+import SmoothScroll from "./SmoothScroll";
 
 export {
+  SmoothScroll,
   Nav,
   Hero,
   CustomButton,
