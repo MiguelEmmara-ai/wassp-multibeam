@@ -5,6 +5,7 @@ import About from "./About";
 import Fseries from "./F-series";
 import BrandScrool from "./BrandScrool";
 import Footer from "./Footer";
+import ImageSroll from "./ImageSroll";
 
 export {
   Nav,
@@ -13,5 +14,6 @@ export {
   About,
   Fseries,
   BrandScrool,
+  ImageSroll,
   Footer
 }
