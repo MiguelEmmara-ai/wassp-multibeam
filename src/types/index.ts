@@ -1,4 +1,4 @@
-import { MouseEventHandler } from "react";
+import { MouseEventHandler, ReactNode } from "react";
 
 export interface CustomButtonProps {
   title: string;
@@ -17,4 +17,9 @@ export interface NewsImageProps {
   imgSrc: string;
   imgAlt: string;
   title: string;
+}
+
+export interface SmoothScrollProps {
+  children: ReactNode
+
 }
