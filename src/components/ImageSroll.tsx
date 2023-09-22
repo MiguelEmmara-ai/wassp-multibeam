@@ -31,11 +31,11 @@ const ImageScroller = () => {
   })
 
   return (
-    <div className="animation-image-container" key={key}>
+    <div className="max-w-full overflow-x-auto">
       <animated.div style={scrolling}>
-        <div className="animation-image-content flex items-center gap-20">
+        <div className="flex items-center space-x-10">
           {images.map((imageUrl, i) => (
-            <div className="animation-image" key={i}>
+            <div key={i}>
               <Image src={imageUrl} width={121} height={121} alt={`Image ${i + 1}`} />
             </div>
           ))}

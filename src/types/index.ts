@@ -7,3 +7,14 @@ export interface CustomButtonProps {
   handleClick?:
   MouseEventHandler<HTMLButtonElement>
 }
+
+export interface ContentProps {
+  number: string;
+  title: string;
+}
+
+export interface NewsImageProps {
+  imgSrc: string;
+  imgAlt: string;
+  title: string;
+}
