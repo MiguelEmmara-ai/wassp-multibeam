@@ -1,11 +1,12 @@
-import { Hero, About, Fseries } from '@/components'
+import { Hero, About, Fseries, BrandScrool } from '@/components'
 
 const Home = () => {
   return (
-    <div className='bg-[#042033]'>
+    <div className="relative">
       <Hero />
       <About />
       <Fseries />
+      <BrandScrool />
     </div>
   )
 }
