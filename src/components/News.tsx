@@ -5,7 +5,7 @@ import Image from 'next/image'
 
 const NewsImage = ({ imgSrc, imgAlt, title }: NewsImageProps) => {
   return (
-    <Box className=" border border-white p-4 rounded-lg">
+    <Box className="container border border-white p-4 rounded-lg">
       <div className="relative bg-cover">
         <Image src={imgSrc} objectFit="cover" alt={imgAlt} width={350} height={350} />
       </div>
@@ -34,7 +34,7 @@ const NewsImage = ({ imgSrc, imgAlt, title }: NewsImageProps) => {
 
 const News = () => {
   return (
-    <div className="flex flex-col">
+    <div className="overflow-x-auto flex flex-col mt-[300px]">
       <Box className="col-start-5 col-span-8 row-start-1 flex flex-row gap-10">
         <NewsImage
           imgSrc="/assets/images/03.jpg"

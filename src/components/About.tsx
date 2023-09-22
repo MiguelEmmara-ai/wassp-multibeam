@@ -5,12 +5,12 @@ const About = () => {
   return (
     <section className="text-white relative mt-[-200px]">
       <div className="flex items-center">
-        <div className="flex-shrink-0 w-1/2">
-          <Image src="/svg/Layers.svg" alt="Layers" width={900} height={900} />
+        <div className="flex-shrink-0 w-full md:w-1/2">
+          <Image src="/svg/Layers.svg" alt="Layers" layout="responsive" width={500} height={500} />
         </div>
 
         {/* Text Content */}
-        <div className="flex-grow p-2 lg:ml-[-270px] lg:mt-[200px] sm:mt-[100px] lg:relative absolute mt-[200px]">
+        <div className="flex-grow p-2 lg:ml-[-270px] lg:mt-[200px] sm:mt-[10px] lg:relative absolute mt-[350px]">
           <h1 className="lg:text-5xl text-4xl font-bold uppercase norwester-font">
             Welcome to the world of
             <br />
