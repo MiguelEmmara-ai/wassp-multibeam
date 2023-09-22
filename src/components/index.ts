@@ -4,6 +4,7 @@ import CustomButton from "./CustomButton";
 import About from "./About";
 import Fseries from "./F-series";
 import BrandScrool from "./BrandScrool";
+import Footer from "./Footer";
 
 export {
   Nav,
@@ -11,5 +12,6 @@ export {
   CustomButton,
   About,
   Fseries,
-  BrandScrool
+  BrandScrool,
+  Footer
 }
