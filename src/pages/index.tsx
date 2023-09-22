@@ -1,20 +1,30 @@
-import ButtonUsage from '@/components/Button'
+import {
+  Hero,
+  About,
+  Fseries,
+  BrandScrool,
+  Content,
+  Testimonial,
+  News,
+  ImageSroll,
+  Footer,
+  SmoothScroll,
+} from '@/components'
 
 const Home = () => {
   return (
-    <section className="flex">
-      <div className="container">
-        <h1>Test Normal Button</h1>
-        <button
-        className='bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 border border-blue-700 rounded'
-        >CLICK ME!</button>
-      </div>
+    <div className="relative">
+      {/* <SmoothScroll></SmoothScroll> */}
+      <Hero />
+      <About />
+      <Fseries />
+      <BrandScrool />
+      <Content number="04" title="TESTIMONIAL" contentComponent={<Testimonial />} />
+      <Content number="05" title="NEWS" contentComponent={<News />} />
+      <ImageSroll />
 
-      <div className="container">
-        <h1>Test MUI Button</h1>
-        <ButtonUsage />
-      </div>
-    </section>
+      <Footer />
+    </div>
   )
 }
 

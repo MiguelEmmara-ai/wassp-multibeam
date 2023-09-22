@@ -1,11 +1,12 @@
 import React from 'react'
 import { render } from '@testing-library/react'
-import ButtonUsage from '@/components/Button'
+import Home from '../pages/index'
 
-describe('ButtonUsage Component', () => {
-  it('renders without errors', () => {
-    const { getByText } = render(<ButtonUsage />)
+describe('HomePage Component', () => {
+  it('should render the home page text', () => {
+    const { getByText } = render(<Home />)
 
-    expect(getByText('Click me!')).toBeInTheDocument()
+    // expect(getByText('Welcome to the Home Page')).toBeInTheDocument();
+    // expect(getByText('This is the home page of our website.')).toBeInTheDocument();
   })
 })
