@@ -13,7 +13,7 @@ const Hero = () => {
         </div>
 
         {/* Hero Content */}
-        <div className="flex items-start justify-start h-full pl-7 mt-[120px]">
+        <div className="flex items-start justify-start h-full md:pl-7 pl-2 md:mt-[120px] mt-[50px]">
           <div className="text-white">
             <Typography variant="h4" className="text-4xl font-extrabold mb-3 norwester-font">
               SEA IT ALL
@@ -27,7 +27,7 @@ const Hero = () => {
           </div>
         </div>
 
-        <div className="flex items-center justify-center mr-[250px] lg:mt-[300px] mt-[250px]">
+        <div className="flex items-center justify-center md:mr-[250px] mr-[170px] lg:mt-[300px] mt-[250px]">
           <div className="text-white max-w-sm rounded-lg shadow-lg font-light">
             <p>
               WASSP multi-beam enables
