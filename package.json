@@ -12,6 +12,7 @@
     "clear-jest-cache": "jest --clearCache"
   },
   "dependencies": {
+    "@apollo/client": "^3.8.4",
     "@emotion/react": "^11.11.1",
     "@emotion/server": "^11.11.0",
     "@emotion/styled": "^11.11.0",
@@ -27,6 +28,7 @@
     "autoprefixer": "10.4.15",
     "eslint": "8.49.0",
     "eslint-config-next": "13.5.1",
+    "graphql": "^16.8.1",
     "next": "13.5.1",
     "postcss": "8.4.30",
     "react": "18.2.0",

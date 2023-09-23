@@ -25,7 +25,7 @@ const BrandScroll = () => {
   })
 
   return (
-    <div className="max-w-full text-white border-t border-b overflow-x-auto mt-20 text-2xl uppercase font-extrabold norwester-font">
+    <div className="max-w-full text-white border-t border-b overflow-x-auto mt-20 text-2xl uppercase font-extrabold norwester-font my-[130px]">
       <animated.div style={scrolling}>
         <div className="flex items-center space-x-20 overflow-x-auto">
           {items.map((item, index) => (
