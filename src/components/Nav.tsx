@@ -10,13 +10,19 @@ import IconButton from '@mui/material/IconButton'
 
 const Nav = () => {
   return (
-    <nav>
+    <nav className="contaier">
       <Box sx={{ flexGrow: 1 }}>
         <AppBar position="static" sx={{ backgroundColor: 'transparent', boxShadow: 'none' }}>
           <Toolbar>
-            <Typography variant="h6" sx={{ flexGrow: 1 }}>
-              <Link href='/'>
-                <Image src="/svg/Logo.svg" alt="logo" width={200} height={85} />
+            <Typography variant="h2" sx={{ flexGrow: 1 }}>
+              <Link href="/">
+                <Image
+                  src="/svg/Logo.svg"
+                  alt="logo"
+                  width={200}
+                  height={85}
+                  className="max-w-full"
+                />
               </Link>
             </Typography>
             <Button color="inherit" className="font-bold norwester-font">

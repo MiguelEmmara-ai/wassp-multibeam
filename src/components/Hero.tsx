@@ -8,7 +8,7 @@ const Hero = () => {
         className="relative min-h-screen bg-hero-overlay bg-cover bg-no-repeat"
         style={{ backgroundBlendMode: 'overlay' }}
       >
-        <div className="pt-[40px]">
+        <div className="md:pt-[40px]">
           <Nav />
         </div>
 
