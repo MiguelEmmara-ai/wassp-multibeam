@@ -34,7 +34,7 @@ const NewsImage = ({ imgSrc, imgAlt, title }: NewsImageProps) => {
 
 const News = () => {
   return (
-    <div className="overflow-x-auto flex flex-col mt-[300px]">
+    <div className="overflow-x-auto flex flex-col mt-[300px] md:mt-[430px] lg:mt-[280px]">
       <Box className="col-start-5 col-span-8 row-start-1 flex flex-row gap-10">
         <NewsImage
           imgSrc="/assets/images/03.jpg"

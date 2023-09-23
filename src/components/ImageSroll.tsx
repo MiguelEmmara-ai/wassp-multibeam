@@ -33,9 +33,9 @@ const ImageScroller = () => {
   })
 
   return (
-    <div className="mt-[200px] max-w-full lg:max-w-screen-xl mx-auto overflow-hidden">
+    <div className="my-[100px] max-w-full lg:max-w-screen-xl mx-auto overflow-hidden">
       <animated.div style={scrolling}>
-        <div className="flex items-center space-x-10">
+        <div className="flex items-center space-x-10 md:max-w-full max-w-lg">
           {images.map((imageUrl, i) => (
             <div key={i}>
               <Image src={imageUrl} width={200} height={200} alt={`Image ${i + 1}`} />
