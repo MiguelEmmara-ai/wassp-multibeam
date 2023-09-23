@@ -8,7 +8,7 @@ interface Page {
 }
 
 interface AboutProps {
-  pages: Page[] | undefined
+  pages?: Page[] | undefined
 }
 
 const About = ({ pages }: AboutProps) => {
@@ -47,7 +47,7 @@ const About = ({ pages }: AboutProps) => {
                   with steerable sounders, generate real-time 3D charts, map fish in water, and make
                   better decisions with the user-friendly advanced mode.
                 </p>
-                <div className='mt-12'>
+                <div className="mt-12">
                   <CustomButton title="Our Story" />
                 </div>
               </div>
