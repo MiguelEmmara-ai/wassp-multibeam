@@ -40,3 +40,42 @@ body {
   font-family: 'neue-haas-grotesk-display', sans-serif;
   background-color: #042033 !important;
 }
+
+/* For smaller screens, zoom in the background image */
+.bg-hero-overlay {
+  transition: background-position 0.3s ease; /* Add a smooth transition effect */
+}
+
+@media (max-width: 1280px) {
+  .bg-hero-overlay {
+    background-position: 45%;
+  }
+}
+
+@media (max-width: 768px) {
+  .bg-hero-overlay {
+    background-position: 60%;
+  }
+}
+
+@media (max-width: 640px) {
+  .bg-hero-overlay {
+    background-position: 47.5%;
+  }
+}
+
+.bg-f-serices-gradient-bg {
+  transition: background-position 0.3s ease; /* Add a smooth transition effect */
+}
+
+@media (max-width: 1280px) {
+  .bg-f-serices-gradient-bg {
+    background-position: 50%;
+  }
+}
+
+@media (max-width: 640px) {
+  .bg-f-serices-gradient-bg {
+    background-position: 50%;
+  }
+}
