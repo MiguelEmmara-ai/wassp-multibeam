@@ -2,7 +2,7 @@
 
 import { useSpring, animated } from '@react-spring/web'
 import Image from 'next/image'
-import { useState } from 'react'
+import { useState, useEffect } from 'react'
 
 const BrandScroll = () => {
   const [key, setKey] = useState(1)
@@ -15,14 +15,26 @@ const BrandScroll = () => {
   ])
 
   const scrolling = useSpring({
-    from: { transform: 'translateX(0%)' },
+    from: { transform: 'translateX(50%)' },
     to: animate ? { transform: 'translateX(-130%)' } : { transform: 'translateX(0%)' },
-    config: { duration: 25000 },
+    config: { duration: 20000 },
     reset: true,
+    loop: true,
     onRest: () => {
       setKey(key + 1)
     },
   })
+
+  // Reset animation and update items when it reaches the end
+  useEffect(() => {
+    if (key >= items.length) {
+      setKey(0)
+      setAnimate(false)
+      setTimeout(() => {
+        setAnimate(true)
+      }, 0)
+    }
+  }, [key, items])
 
   return (
     <div className="max-w-full text-white border-t border-b overflow-x-auto mt-20 text-2xl uppercase font-extrabold norwester-font my-[130px]">
