@@ -31,10 +31,10 @@ const Nav = () => {
             <Button color="inherit" className="font-bold norwester-font">
               Login
             </Button>
-            <Button color="inherit" className="font-bold norwester-font">
+            <Button color="inherit" className="hidden md:block font-bold norwester-font">
               En
             </Button>
-            <IconButton className="ml-[-30px]" color="inherit">
+            <IconButton className="ml-[-30px] hidden md:block" color="inherit">
               <img src="/svg/ArrowDown.svg" alt="Down Arrow" width={24} height={24} />
             </IconButton>
             <IconButton color="inherit">

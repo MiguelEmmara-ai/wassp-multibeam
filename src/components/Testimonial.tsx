@@ -6,7 +6,9 @@ const Testimonial = () => {
         REDUCED FUEL CONSUMPTION.”
       </h1>
       <p className="tk-neue-haas-grotesk-display text-base font-medium text-white">
-        Dominique Faou Owner/Skipper, France
+        <span className="name">Dominique Faou</span>
+        <br />
+        <span className="position">Owner/Skipper, France</span>
       </p>
     </div>
   )

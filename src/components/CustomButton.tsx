@@ -16,7 +16,7 @@ const ButtonStyles = {
     border: 'none',
   },
   borderRadius: '9999px',
-  border: '1px solid #718096',
+  border: '1px solid #FFFEFE',
 }
 
 const CustomButton = ({ title, handleClick }: CustomButtonProps) => {

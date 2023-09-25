@@ -29,17 +29,17 @@ const About = ({ pages }: AboutProps) => {
         </div>
 
         {/* Text Content */}
-        <div className="flex-grow p-2 lg:ml-[-270px] lg:mt-[200px] sm:mt-[10px] lg:relative absolute md:mt-[350px] mt-[500px]">
-          <h1 className="lg:text-5xl text-4xl font-bold uppercase norwester-font">
+        <div className="flex-grow p-2 lg:ml-[-350px] lg:mt-[200px] sm:mt-[10px] lg:relative absolute md:mt-[350px] mt-[500px]">
+          <h1 className="lg:text-6xl text-4xl font-bold uppercase norwester-font">
             Welcome to the world of
             <br />
             <span>{pageTitle}</span>
           </h1>
 
           <div className="mt-2">
-            <div className="flex md:flex-row flex-col md:space-x-[130px]">
-              <p className="text-2xl font-semibold">01</p>
-              <p className="text-xl font-semibold">ABOUT WASSP</p>
+            <div className="flex md:flex-row md:space-x-[130px] space-x-[20px]">
+              <p className="text-1xl font-semibold">01</p>
+              <p className="text-1xl font-semibold">ABOUT</p>
               <div className="max-w-sm sm:max-w-md md:max-w-lg lg:max-w-xl xl:max-w-2xl">
                 <p className="text-sm sm:text-base md:text-lg lg:text-xl">
                   WASSP, a powerful multi-beam sounder with 120-degree coverage and models for deep

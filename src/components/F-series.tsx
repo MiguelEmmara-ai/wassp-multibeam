@@ -19,9 +19,9 @@ const Fseries = () => {
         <div className="flex flex-col md:flex-row items-center justify-between md:mt-2 mt-[500px]">
           {/* Content at the bottom for mobile */}
           <div className="md:hidden">
-            <Typography variant="body1">f - series</Typography>
+            <Typography variant="inherit">f - series</Typography>
             <div className="mt-4">
-              <Typography variant="body1">
+              <Typography variant="inherit">
                 WASSP Multibeam finds fish and habitat over a wider area than single-beam systems.
               </Typography>
             </div>
@@ -52,9 +52,9 @@ const Fseries = () => {
             </div>
           </div>
           <div className="relative ml-auto mt-20">
-            <Typography variant="body1">F-Series</Typography>
+            <Typography variant="inherit">F-Series</Typography>
             <div className="mt-4">
-              <Typography variant="body1">
+              <Typography variant="inherit">
                 WASSP Multibeam can detect fish and habitat over a wider area compared to
                 single-beam systems.
               </Typography>
