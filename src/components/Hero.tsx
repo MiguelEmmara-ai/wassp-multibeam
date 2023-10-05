@@ -16,7 +16,7 @@ const Hero = () => {
         <div className="flex items-start justify-start h-full md:pl-7 pl-2 md:mt-[120px] mt-[50px]">
           <div className="text-white">
             <Typography variant="h4" className="text-4xl font-extrabold mb-3 norwester-font">
-              SEA IT ALL Test Change
+              SEA IT ALL
             </Typography>
             <Typography variant="subtitle1" className="text-5xl font-extrabold norwester-font">
               MULTIBEAM SONAR
