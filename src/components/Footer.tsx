@@ -101,6 +101,46 @@ const Footer = () => {
           </div>
         </div>
       </footer> */}
+
+      {/* <footer className='text-white'>
+        <div className="block sm:flex justify-between sm:mx-8">
+          <div className="mb-16 max-w-[350px]">
+            <p className="text-white font-[16px] sm:text-[20px]">
+              Nunc viverra quam ac felis consequat tempor. Nunc bibendum massa ut ipsum ultricies.
+            </p>
+            <div className="my-16">
+              <CustomButton title="Contact" />
+            </div>
+            <a className="underline text-[14px] text-gray-300">Subscribe to our newsletter</a>
+          </div>
+        </div>
+
+        <div className="absolute grid grid-rows-11 grid-cols-2 gap-y-2 gap-x-10 top-[92.5%] right-[4.39%] ml-48">
+          <div>Home</div>
+          <div>Offices</div>
+          <div>Auckland - NZ</div>
+          <div>Essex - UK</div>
+          <div>Multibeam Technology</div>
+          <div>Products</div>
+          <div>News</div>
+          <div>Resources</div>
+          <div>Contact</div>
+          <div>Facebook</div>
+          <div>Instagram</div>
+          <div>Youtube</div>
+        </div>
+
+        <div className="absolute top-[56.16%] lg:left-[82.5%] md:left-[50%] left-[35%]">
+          ©2023 WASSP
+        </div>
+        <Image
+          className="absolute h-[18.91%] w-[91.22%] top-[72.49%] right-[4.39%] bottom-[5.0%] left-[2.5%] max-w-full overflow-hidden max-h-full mix-blend-overlay"
+          alt="WasspMultibeam"
+          src="/svg/WasspMultibeam.svg"
+          width={500}
+          height={500}
+        />
+      </footer> */}
     </>
   )
 }
