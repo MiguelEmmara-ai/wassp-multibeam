@@ -9,12 +9,17 @@ pipeline {
             }
         }
 
-        stage('Build') {
+        stage('Build and Test') {
             steps {
-                // Navigate to your Next.js app directory
-                dir('path/to/your/nextjs/app') {
-                    // Install dependencies using pnpm and build the Next.js app
+                // Navigate to your Next.js app directory within the Jenkins workspace
+                dir('') {
+                    // Install dependencies using pnpm
                     sh 'pnpm install'
+
+                    // Run tests (replace with your actual test command)
+                    sh 'pnpm test:ci'
+
+                    // Build the Next.js app
                     sh 'pnpm run build'
                 }
             }
@@ -23,7 +28,7 @@ pipeline {
         stage('Deploy') {
             steps {
                 // Copy the built files to your web server directory
-                sh 'cp -r /var/lib/jenkins/workspace/Next Gen Test 2/build/. /var/www/wassp-test.miguelemmara.me'
+                sh 'cp -r /var/lib/jenkins/workspace/Next\ Gen\ Test\ 2/. /var/www/wassp-test.miguelemmara.me'
             }
         }
     }
